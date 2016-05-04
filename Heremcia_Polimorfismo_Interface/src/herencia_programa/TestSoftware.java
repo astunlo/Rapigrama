@@ -1,4 +1,9 @@
 package herencia_programa;
+/**
+ * 
+ * @author Gastón
+ *
+ */
 
 public class TestSoftware {
 

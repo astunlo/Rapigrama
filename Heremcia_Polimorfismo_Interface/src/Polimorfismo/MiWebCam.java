@@ -1,4 +1,9 @@
 package Polimorfismo;
+/**
+ * 
+ * @author Gastón
+ *
+ */
 
 import java.util.Scanner;
 

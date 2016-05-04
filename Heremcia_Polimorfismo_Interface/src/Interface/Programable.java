@@ -1,4 +1,9 @@
 package Interface;
+/**
+ * 
+ * @author Gastón
+ *
+ */
 
 import java.util.Scanner;
 

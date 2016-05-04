@@ -1,4 +1,9 @@
 package Interface;
+/**
+ * 
+ * @author Gastón
+ *
+ */
 
 class MiWebCam extends Software {
    private String tipoCamSoportada;

@@ -2,6 +2,12 @@ package herencia_programa;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Gastón
+ *
+ */
+
 class Software {
 	
 	protected String nombre;

@@ -1,5 +1,7 @@
 package herencia_programa;
-
+/**
+ * @autor López Gastón
+ */
 import java.util.Scanner;
 
 class MiWebCam extends Software {
