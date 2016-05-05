@@ -3,12 +3,16 @@ package identificadores;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public class Archivo {
 	private Identificador ident;
 	private static String Resource1 = "Resources//Entrada//ident.in";
-	
+	private static String ResourceOut= "Resources//Salida//ident.out";
+		
 	/**
 	 * Lectura y escritura de archivo.
 	 *     Se graba en Array de palabras las palabras cagadas en ident.in
@@ -21,7 +25,7 @@ public class Archivo {
 	 */
 	
 	public void leerArchivo(){
-		File archivo=null;
+		File archivoIn=null;
 		FileReader fileR=null;
 		BufferedReader bufferR=null;
 		String linea= " ";
@@ -29,8 +33,8 @@ public class Archivo {
 		
 		try{ 
 			 
-			 archivo=new File(Resource1);
-		     fileR=new FileReader(archivo);
+			 archivoIn=new File(Resource1);
+		     fileR=new FileReader(archivoIn);
 		     bufferR=new BufferedReader(fileR);
 		     		     
 		     while((linea=bufferR.readLine())!=null){
@@ -44,6 +48,27 @@ public class Archivo {
 			this.getIdent().mostrarPalabras();
 			System.out.println("\t       *** Fin de lectura ***\n");
 		}			
+	}
+	
+	
+	public void grabarArchivo(ArrayList<String> datosAGrabar){
+		File archivoOut=null;
+		FileWriter fileW=null;
+		PrintWriter pW=null;
+		
+		try{
+		     archivoOut= new File(ResourceOut);	
+		     fileW= new FileWriter (archivoOut);
+		     pW= new PrintWriter(fileW);
+		     
+		     for(int i=0; i<datosAGrabar.size();i++){
+		         pW.println(datosAGrabar.get(i));
+		     }
+		     pW.println();	     
+		     
+		}catch(Exception e){
+			e.printStackTrace();
+		}		
 	}
 
 	/**

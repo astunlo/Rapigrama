@@ -27,8 +27,10 @@ public class Fonema {
 	
 	
 	public void mostrarVector(){
+		System.out.println("\nVector:");
 		for(int i=0; i<this.getFonemasVector().length;i++){
 			  if(this.getFonemasVector()[i]!=null){
+				 System.out.println("Array [" + i + "]");
 			     for(int j=0; j<this.getFonemasVector()[i].size();j++){
 			             System.out.println(fonemasVector[i].get(j));
 			        }
