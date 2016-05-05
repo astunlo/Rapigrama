@@ -64,7 +64,7 @@ public class Archivo {
 		     for(int i=0; i<datosAGrabar.size();i++){
 		         pW.println(datosAGrabar.get(i));
 		     }
-		     pW.println();	     
+		     pW.println("Hola");	     
 		     
 		}catch(Exception e){
 			e.printStackTrace();

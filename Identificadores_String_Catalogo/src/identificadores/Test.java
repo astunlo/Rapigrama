@@ -8,6 +8,5 @@ public class Test {
 		archivo1.leerArchivo();
 		archivo1.getIdent().reconocerIdentificadores();
 		archivo1.getIdent().compararFonemas();
-		//archivo1.grabarArchivo();
 	}
 }
