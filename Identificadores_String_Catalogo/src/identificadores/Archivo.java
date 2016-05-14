@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 public class Archivo {
 	private Identificador ident;
@@ -51,20 +50,17 @@ public class Archivo {
 	}
 	
 	
-	public void grabarArchivo(ArrayList<String> datosAGrabar){
-		File archivoOut=null;
+	public void grabarArchivo(){
 		FileWriter fileW=null;
 		PrintWriter pW=null;
+		String linea= "Hola";
+		ident=new Identificador();
 		
 		try{
-		     archivoOut= new File(ResourceOut);	
-		     fileW= new FileWriter (archivoOut);
+		     fileW= new FileWriter (ResourceOut);
 		     pW= new PrintWriter(fileW);
 		     
-		     for(int i=0; i<datosAGrabar.size();i++){
-		         pW.println(datosAGrabar.get(i));
-		     }
-		     pW.println("Hola");	     
+		     pW.println(linea); 	     
 		     
 		}catch(Exception e){
 			e.printStackTrace();
