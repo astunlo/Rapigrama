@@ -9,6 +9,7 @@ public class Tablero implements Cloneable {
 	private String[] tablero; //Tablero leido (matriz de string) cargado como Array de String reglon a reglon
 	private Integer fila;
 	//GASTON
+	//pepe
     /**
 	 * Constructor de Tablero que crea objeto tipo array de String y lo inicializa.
 	 * @param dimension
