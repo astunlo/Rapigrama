@@ -82,9 +82,10 @@ public class Identificador {
 				       }
 				  }
 				fonemasAux.cargarVector(identif_detectados);
-				new Archivo().grabarArchivo(identif_detectados);			}
+				//this.setIdentificadores(identif_detectados);
+   			}
 		}
-		//fonemasAux.mostrarVector();
+		fonemasAux.mostrarVector();
 	}
 
 	/**
